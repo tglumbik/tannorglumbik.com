@@ -1,10 +1,10 @@
 /* Style Guide 
- * Primary Color: cornflower #3498db 
- * Secondary Color: #cd6155 
+ * Primary Color: cornflower Navy 0,20,213
+ * Secondary Color: Red 252,20,43
 */
 
 h1 {
-  color: #3498db;
+  color: rgb(0,20,213);
   font-family: 'Gelasio', 'Merriweather', 'Bitter', serif;
   font-size: 48px;
   letter-spacing: 15px;
@@ -16,10 +16,8 @@ h1 {
   height: auto;
 }
 
-}
-
 p {
-  color: #cd6155
+  color: rgb(252,20,43)
 }
 
 /* Typography
