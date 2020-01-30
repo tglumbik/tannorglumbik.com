@@ -1,0 +1,27 @@
+/* Style Guide 
+ * Primary Color: cornflower #3498db 
+ * Secondary Color: #cd6155 
+*/
+
+h1 {
+  color: #3498db;
+  font-family: 'Gelasio', 'Merriweather', 'Bitter', serif;
+  font-size: 48px;
+  letter-spacing: 15px;
+  text-align: center;
+}
+  
+.responsive {
+  width: 50%;
+  height: auto;
+}
+
+}
+
+p {
+  color: #cd6155
+}
+
+/* Typography
+ * Primary Font: Lucida Bright
+*/
