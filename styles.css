@@ -1,25 +1,32 @@
 /* Style Guide 
- * Primary Color: cornflower Navy 0,20,213
+ * Primary Color: Navy 0,20,213
  * Secondary Color: Red 252,20,43
 */
 
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+
 h1 {
   color: rgb(0,20,213);
-  font-family: 'Gelasio', 'Merriweather', 'Bitter', serif;
   font-size: 48px;
-  letter-spacing: 15px;
-  text-align: center;
+  letter-spacing: 10px;
+  text-align: Left;
+  font-family: 'Felipa', cursive;
+  margin-top: -50px;
+  margin-bottom: auto;
+}
+
+h3 {
+  margin-left: 50px;
 }
   
 .responsive {
   width: 50%;
   height: auto;
+  
 }
 
 p {
   color: rgb(252,20,43)
 }
-
-/* Typography
- * Primary Font: Lucida Bright
-*/
