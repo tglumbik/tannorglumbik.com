@@ -1,32 +1,254 @@
-/* Style Guide 
- * Primary Color: Navy 0,20,213
- * Secondary Color: Red 252,20,43
+/* Style Sheet
+font-family: 'Open Sans', sans-serif;
+black
+white
+Navy rgb(51,51,153)
+Red rgb(255,51,51)
 */
 
-html {
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: white;
   font-family: 'Open Sans', sans-serif;
 }
 
-h1 {
-  color: rgb(0,20,213);
-  font-size: 48px;
-  letter-spacing: 10px;
-  text-align: Left;
-  font-family: 'Felipa', cursive;
-  margin-top: -50px;
-  margin-bottom: auto;
+
+  .navbar {
+  height: 147px;
+  background: rgb(51,51,153);
+  padding: 0em .5em 0em 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-h3 {
-  margin-left: 50px;
-}
+  a {
+  color: white;
+  background: none;
+  text-decoration: none;
   
-.responsive {
+}
+
+  a:hover{
+  background: rgb(255,51,51);
+  color: black;
+}
+
+  .hoversp {
+  padding: 0 .5em 0 .5em; 
+}
+
+  h1 {
+  font-size: 2em;
+  background: rgb(51,51,153);
+  letter-spacing: 5px;
+  flex-grow: 2;
+}
+
+  .navlogo {
+  background: white;
   width: auto;
-  height: 25vh;
+  height: 150px;
+  padding: .75em;
+} 
+
+@media screen and (max-width: 720px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 0 0 .5em 0;
+    margin-bottom: 1em;
+  }
+  
+  .navlogo {
+    padding: 0 .75em .75em .75em;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .hoversp {
+    margin-bottom: .5em;
+  }
+  
   
 }
 
-p {
-  color: rgb(252,20,43)
+header {
+  margin-top: 10px;
+}
+
+#introsp {
+  font-size: 1em;
+  color: rgb(51,51,153);
+  background: none;
+  text-decoration: none; 
+}
+
+#introsp:hover {
+  color: rgb(255,51,51);
+  background: white; 
+}
+
+.homeheader {
+  background: none;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  grid-template-rows: 1 1 1 1;
+  grid-gap: 1.5em;
+  overflow: wrap;
+  
+}
+
+h2 {
+  color: black;
+  background: none;
+  font-size: 4.5em;
+  text-align: right;
+  min-width: 350px;
+  margin-top: 10px;
+}
+
+.homeimg {
+  grid-column: 1 / 5;
+  grid-row: 1 / 5;
+  object-fit: cover;
+  height: 500px;
+  width: 100vw;
+  overflow: hidden;
+  opacity: .3;
+}
+
+.homeslide {
+  background: none;
+  height: 100px;
+  min-width: 350px;
+  overflow: hidden;
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+}
+
+.slide {
+  animation-name: slide;
+  animation-duration: 6s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-delay: .5s;
+  animation-timing-function: linear;
+}
+
+@keyframes slide {
+  0% {
+    margin-top: 10px;
+  }
+  10% {
+    margin-top: 10px;
+  }
+  90% {
+    margin-top: -321.2px;
+  }
+  100% {
+    margin-top: -321.2px;
+  }
+}
+
+.introhead {
+  font-size: 4.5em; /* 72px / 16px = 4.5em*/
+  grid-column: 3 / 4;
+  grid-row: 1 / 3;
+  height: 1.389em; /* 100px / 72px  = 1.389em */
+  justify-self: centerstrech;
+  text-align: left;
+}
+
+.intro {
+  color: black;
+  background: none;
+  font-size: 1.5em;
+  grid-column: 2 / 4;
+  grid-row: 3 / 5;
+  text-align: center;
+}
+
+@media screen and (max-width: 780px) {
+  .homeslide {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+  }
+  
+  .homeimg {
+    height: 110%;
+    width: 100vw;
+  }
+  
+  .introhead {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+    text-align: center;
+  }
+  .intro {
+    grid-column: 2 / 4;
+    grid-row: 3 / 5;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  .homeheader {
+    grid-gap: .5em;
+    grid-template-columns: 1fr 4fr 4fr 1fr;
+  }
+  
+  @keyframes slide {
+    0% {
+      margin-top: 0px;
+    }
+    10% {
+      margin-top: 0px;
+    }
+    90% {
+      margin-top: -321.2px;
+    }
+    100% {
+      margin-top: -321.2px;
+    }
+}
+}
+
+@media screen and (max-width: 480px) {
+  .homeheader {
+    grid-template-columns: 10px, 1fr, 1fr, 10px;
+  }
+  
+  h2 {
+    font-size: 48px;
+    min-width: 0px;
+  }
+  .introhead {
+    font-size: 48px;
+  }
+  
+  .homeslide {
+    min-width: 0px;
+    height: 60px
+  }
+  
+  @keyframes slide {
+  0% {
+    margin-top: 0px;
+  }
+  10% {
+    margin-top: 0px;
+  }
+  90% {
+    margin-top: -235.6px;
+  }
+  100% {
+    margin-top: -235.6px;
+  }
+}
 }
