@@ -459,7 +459,7 @@ footer img {
 }
 
 .hoverwhite a:hover {
-  background: var(--styleRed)
+  background: #000;
 }
 
 @media screen and (max-width: 780px) {
