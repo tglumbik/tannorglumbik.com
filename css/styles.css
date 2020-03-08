@@ -86,18 +86,6 @@ header {
   margin-top: var(--sectionTop);
 }
 
-#introsp {
-  font-size: 1em;
-  color: rgb(51,51,153);
-  background: none;
-  text-decoration: none; 
-}
-
-#introsp:hover {
-  color: var(--styleRed);
-  background: white; 
-}
-
 .homeheader {
   background: none;
   display: grid;
@@ -425,5 +413,65 @@ h2 {
   
   .homeverticalftright div {
     grid-row: 2 / 3;
+  }
+}
+
+footer {
+  height: 150px;
+  background: var(--styleBlue);
+  color: #fff;
+  margin-top: var(--sectionTop);
+  
+}
+
+div a:link {
+  background: var(--styleBlue);
+  color: #fff;
+  text-decoration: none;
+  transition: background 150ms ease-in-out;
+  padding: 0 .5em 0 .5em;
+}
+
+div a:hover {
+  background: var(--styleRed);
+  padding: 0 .5em 0 .5em;
+}
+
+footer div {
+  background: var(--styleBlue);
+  font-size: 1em;
+  letter-spacing: 2px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hoverwhite{
+  background: #fff;
+  height: 150px;
+  width: 150px;
+}
+
+.hoverwhite a:hover {
+  background: var(--styleRed)
+}
+
+@media screen and (max-width: 780px) {
+  footer div {
+    flex-direction: column;
+  }
+  
+  footer {
+    height: auto;
+  }
+  
+  div a:link {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  a.hoverwhite img {
+    padding: 0;
   }
 }
