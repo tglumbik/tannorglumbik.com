@@ -679,3 +679,107 @@ footer img {
     grid-row: 4 / 5;
 }
 }
+
+/* experience.html */
+
+.exp {
+  margin-top: var(--sectionTop);
+}
+
+.expNav {
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 0 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.expNav a {
+  background: #fff;
+
+}
+
+.expNav h2 {
+  font-size: 1.5em;
+  color: var(--styleBlue);
+  background: #fff;
+
+}
+
+.expNav a:link {
+  text-decoration: none;
+  color: var(--styleBlue);
+  transition: color 250ms linear;
+}
+
+.expNav a:hover {
+  color: var(--styleRed);
+  background: #fff;
+  transition: color 50ms linear;
+}
+
+.expWork,
+.expDesign {
+  margin: var(--sectionTop) 10px 0 10px;
+}
+.expWork h3,
+.expDesign h3 {
+  font-size: 2em;
+  letter-spacing: 2px;
+  color: #fff;
+  background: var(--styleBlue);
+  margin: 0 -10px 0 -10px;
+  padding: 10px 0;
+  text-indent: 10px;
+}
+
+.expList {
+  letter-spacing: 1px;
+  margin-top: 10px;
+  
+}
+
+.expList h4 {
+  display: inline-block;
+  width: 66vw;
+  font-style: bold;
+  font-size: 1.5em;
+  color: #000;
+  background: var(--styleRed);
+  margin: 20px -10px 0 -10px;
+  padding: 2.5px 10px 7.5px 10px;
+}
+
+.expList p {
+  width: 66vw;
+  margin-top: 10px;
+  text-align: justify;
+  font-size: 1.25em;
+}
+
+@media screen and (max-width: 780px) {
+  .expNav {
+    flex-direction: column;
+  }
+  
+  .expWork h3,
+  .expDesign h3 {
+    z-index: 2;
+    font-size: 1.5em;
+  }
+  
+  .expList h4 {
+    font-size: 1.25em;
+    width: auto;
+    display: block;
+  }
+  
+  .expList p {
+    width: auto;
+    font-size: 1em;
+  }
+  
+  .expNav {
+    font-size: 1.25em;
+  }
+}
