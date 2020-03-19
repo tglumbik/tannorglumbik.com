@@ -707,6 +707,7 @@ footer img {
 }
 
 .expNav a:link {
+  background: #fff;
   text-decoration: none;
   color: var(--styleBlue);
   transition: color 250ms linear;
