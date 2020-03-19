@@ -503,7 +503,8 @@ footer img {
 }
 
 .fofpage video {
-  min-width: 100vw;
+  width: 100vw;
+  height: auto;
 }
 
 .fofpage h2 {
