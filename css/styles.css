@@ -41,15 +41,21 @@ Red rgb(255,51,51)
   color: black;
 }
 
-  .hoversp {
+  .hoversp ,
+  .unique{
   padding: 0 .5em 0 .5em; 
 }
 
-  h1 {
+  .navbar h1 {
   font-size: 2em;
   background: var(--styleBlue);
   letter-spacing: 5px;
   flex-grow: 2;
+}
+
+.unique a:hover {
+  background: var(--styleBlue);
+  color: var(--styleRed);
 }
 
   .navlogo {
