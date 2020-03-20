@@ -271,7 +271,7 @@ h2 {
   font-size: 2em; /* 32px / 16px = 2em */
   letter-spacing: 2px;
   text-align: center;
-  margin-top: 10px;
+  margin: 10px 10px 0 10px;
 }
 
 .homehorizontalft p {
@@ -592,6 +592,7 @@ footer img {
   letter-spacing: 2px;
   color: var(--styleBlue);
   background: #fff;
+  padding-bottom: 5px;
 }
 
 .about p, q {
