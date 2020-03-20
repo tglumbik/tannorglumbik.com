@@ -816,9 +816,10 @@ footer img {
   align-content: flex-start;
 }
 
-.gallery img {
+.gallery a img {
   max-width: 100px;
   max-height: 100px;
+  margin: 10px;
 }
 
 .gallery a {
@@ -831,10 +832,6 @@ footer img {
 
 .gallery a:hover {
   background: #fff
-}
-
-.gallery img {
-  margin: 10px;
 }
 
 .fullsize {
