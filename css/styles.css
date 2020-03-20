@@ -864,3 +864,39 @@ footer img {
     letter-spacing: 1px;
   }
 }
+
+/* contact.html */
+
+input {
+  background: rgba(0, 0, 0, .1);
+  color: var(--styleBlue);
+  padding: 5px;
+}
+
+textarea {
+  background: rgba(0, 0, 0, .1);
+  color: var(--styleBlue);
+  padding: 5px;
+}
+
+form p,
+form input {
+  margin: 10px 10px 0 10px;
+  color: var(--styleBlue);
+}
+
+button {
+  text-align: center;
+  background: rgba(0, 0, 0, .1);
+  color: var(--styleBlue);
+  padding: 5px;
+  border-radius: 10px;
+  margin-top: 20px;
+  transition: background 200ms ease-in-out;
+}
+
+button:hover {
+  background: var(--styleRed);
+  color: #000;
+  transition: background 50ms linear;
+}
