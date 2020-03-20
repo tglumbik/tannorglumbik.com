@@ -507,6 +507,24 @@ footer img {
   height: auto;
 }
 
+.fofpage img {
+  width: 100vw;
+  height: auto;
+  opacity: .3;
+}
+
+@media screen and (max-width: 720px) {
+  .fofpage video {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 721px) {
+  .fofpage img {
+    display: none;
+  }
+}
+
 .fofpage h2 {
   color: var(--styleRed);
   background: none;
