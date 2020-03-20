@@ -592,7 +592,7 @@ footer img {
   letter-spacing: 2px;
   color: var(--styleBlue);
   background: #fff;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 
 .about p, q {
