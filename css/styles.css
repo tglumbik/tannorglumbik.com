@@ -10,7 +10,7 @@ Red rgb(255,51,51)
   margin: 0;
   padding: 0;
   border: 0;
-  background: white;
+  /* background: white; */
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -85,6 +85,29 @@ Red rgb(255,51,51)
     margin-bottom: .5em;
   }
   
+  h1 {
+    max-width: 1770px;
+  }
+
+  h2 {
+    max-width: 1215px;
+  }
+
+  h3 {
+    max-width: 880px;
+  }
+
+  h4 {
+    max-width: 685px;
+  }
+
+  h5 {
+    max-width: 550px;
+  }
+
+  h6 {
+    max-width: 470px;
+  }
   
 }
 
@@ -159,7 +182,7 @@ h2 {
   grid-column: 3 / 4;
   grid-row: 1 / 3;
   height: 1.389em; /* 100px / 72px  = 1.389em */
-  justify-self: centerstrech;
+  text-justify: inter-word;
   text-align: left;
 }
 
@@ -169,7 +192,9 @@ h2 {
   font-size: 1.5em;
   grid-column: 2 / 4;
   grid-row: 3 / 5;
-  text-align: center;
+  margin: 0 auto;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 @media screen and (max-width: 780px) {
@@ -191,6 +216,7 @@ h2 {
   .intro {
     grid-column: 2 / 4;
     grid-row: 3 / 5;
+    text-align: left;
   }
   
   h2 {
@@ -285,11 +311,13 @@ h2 {
   color: #fff;
   margin-top: 10px;
   font-size: 1.25em; /* 20 / 16 = 1.5em */
-  text-align: center;
+  text-align: left;
   width: 75vw;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .homeverticalftleft {
@@ -327,10 +355,12 @@ h2 {
   color: #fff;
   margin-top: 10px;
   font-size: 1.25em; /* 20 / 16 = 1.5em */
-  text-align: center;
-  margin-left: 10px;
-  margin-right: 10px;
+  text-align: left;
+  margin-left: 21px;
+  margin-right: 21px;
   padding-bottom: 10px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .homeverticalftright {
@@ -370,9 +400,11 @@ h2 {
   margin-top: 10px;
   font-size: 1.25em; /* 20 / 16 = 1.5em */
   padding-bottom: 10px;
-  text-align: center;
-  margin-left: 10px;
-  margin-right: 10px;
+  text-align: left;
+  margin-left: 21px;
+  margin-right: 21px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 @media screen and (max-width: 780px) {
@@ -623,7 +655,8 @@ footer img {
 }
 
 .aboutOne p {
-  text-align: center;
+  text-align: justify;
+  text-justify: inter-word;
   margin: 10px 15% 0 15%; 
 }
 
@@ -651,7 +684,8 @@ footer img {
 
 .aboutTwo q {
   text-align: justify;
-  margin: 10px 10px 0 10px;
+  text-justify: inter-word;
+  margin: 10px 21px 0 21px;
   grid-column: 1 / 2;
   grid-row: 2 / 3;
 }
@@ -905,4 +939,114 @@ button:hover {
   background: var(--styleRed);
   color: #000;
   transition: background 50ms linear;
+}
+
+/* hw.html */
+
+.classname {
+  margin: 28px 0 0 0;
+}
+
+.desn350 h2 {
+  padding: 0 14px 7px 14px;
+  width: 75vw;
+  background: var(--styleBlue);
+  color: #fff;
+  font-size: 52px;
+  text-align: right;
+}
+
+div.assnav {
+  margin: 0 0px 0 14px;
+  width: 75vw;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.assnav a {
+  background: white;
+  color: #000;
+}
+
+.assnav a:link {
+  background: none;
+}
+
+.assnav a:hover {
+  background: none;
+  color: #ee3a39;
+}
+
+.assnav h6 {
+  margin: 2px 0 0 7px;
+  text-align: right;
+  font-size: 12px;
+  color: #000;
+}
+
+.assnav h6:hover {
+  color: #ee3a39;
+}
+
+div .hwass {
+  margin: 42px auto 0 auto;
+  padding: 14px;
+  max-width: 550px;
+  background: #e5e5e6;
+  border-radius: 5px;  
+}
+
+.hwass h3 {
+  margin: 0 0 14px 0;
+  font-size: 26px;
+  color: #363794;
+}
+
+.hwass p {
+  margin: 0 0 14px 0;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: justify;
+  text-justify: inter-word;
+
+}
+
+.hwass img {
+  margin: 0 0 14px 0;
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+}
+
+.hwass .responsive {
+  margin: 0 0 14px 0;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 100%;
+}
+
+.hwass .responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hwass div h5 {
+  text-align: center;
+  margin: 0 0 7px 0;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+ .hwass p.phototag {
+  margin-top: -14px;
+  font-size: 12px;
+  color: #96969c;
+  text-align: right;
 }
