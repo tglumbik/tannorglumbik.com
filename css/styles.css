@@ -943,11 +943,15 @@ button:hover {
 
 /* hw.html */
 
+section.classname {
+  margin-top: 70px;
+}
+
 .classname {
   margin: 28px 0 0 0;
 }
 
-.desn350 h2 {
+.desn h2 {
   padding: 0 14px 7px 14px;
   width: 75vw;
   background: var(--styleBlue);
@@ -965,6 +969,7 @@ div.assnav {
 }
 
 .assnav a {
+  padding: 0px;
   background: white;
   color: #000;
 }
@@ -974,6 +979,7 @@ div.assnav {
 }
 
 .assnav a:hover {
+  margin: 0px;
   background: none;
   color: #ee3a39;
 }
@@ -1049,4 +1055,41 @@ div .hwass {
   font-size: 12px;
   color: #96969c;
   text-align: right;
+}
+
+.hwass video {
+  width: 100%;
+  height: auto;
+  max-width: 550px;
+}
+
+div.classnav {
+  margin: 70px auto 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+div.classnav a {
+  margin: 14px 7px 0 7px;
+  padding: 14px 7px;
+  border-radius: 5px;
+  background: #363794;
+  color: #fff;
+}
+
+div.classnav a:hover {
+  background: #ee3a39;
+}
+
+div.classnav h4 {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 550px) {
+  .hwass p {
+    text-align: left;
+  }
 }
