@@ -1204,16 +1204,16 @@ div.classnav h4 {
   font-size: 10pt;
 }
 
-@media only screen and (min-width: 1501px) {
+@media only screen and (min-width: 2001px) {
   .container {
     width: calc(20% - 8px);
   }
   .title {
-    font-size: 22pt;
+    font-size: 26pt;
   }
 
   .text {
-    font-size: 18pt;
+    font-size: 20pt;
   }
   .profinalcred h6{
     display: block;
@@ -1225,6 +1225,19 @@ div.classnav h4 {
   .profinal h2 {
     font-size: 60pt;
   }
+}
+
+@media only screen and (max-width: 2000px) {
+  .container {
+    width: calc(20% - 8px);
+  }
+  .title {
+    font-size: 22pt;
+  }
+
+  .text {
+    font-size: 18pt;
+  }
 
 }
 @media only screen and (max-width: 1500px) {
@@ -1235,16 +1248,66 @@ div.classnav h4 {
   .profinal h2 {
     font-size: 54pt;
   }
-}
-@media only screen and (mox-width: 900px) {
+
   .title {
+    font-size: 24pt;
+  }
+
+  .text {
     font-size: 18pt;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .title {
+    font-size: 20pt;
+  }
+
+  .text {
+    font-size: 16pt;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .title {
+    font-size: 16pt;
   }
 
   .text {
     font-size: 14pt;
   }
 }
+
+@media only screen and (max-width: 819px) {
+  .title {
+    font-size: 12pt;
+  }
+}
+
+@media only screen and (min-width: 801px) {
+  div.click {
+    display: block;
+  }
+
+  div.tap { 
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  div.click {
+    display: none;
+  }
+
+  div.tap { 
+    display: block;
+  }
+
+  .text {
+    font-size: 10pt;
+  }
+}
+
 @media only screen and (max-width: 750px) {
   .container {
     width: calc(33% - 8px);
@@ -1257,7 +1320,27 @@ div.classnav h4 {
   .profinal h2 {
     font-size: 48pt;
   }
+
+  .title {
+    font-size: 14pt;
+  }
+
+  .text {
+    font-size: 12pt;
+  }
 }
+
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 12pt;
+  }
+
+  .text {
+    font-size: 10pt;
+  }
+  
+}
+
 @media only screen and (max-width: 500px) {
   .container {
     width: calc(50% - 8px);
@@ -1265,6 +1348,15 @@ div.classnav h4 {
 
   .profinal h2 {
     font-size: 36pt;
+  }
+
+  .title {
+    font-size: 14pt;
+
+  }
+
+  .text {
+    font-size: 12pt;
   }
 }
 @media only screen and (max-width: 400px) {
