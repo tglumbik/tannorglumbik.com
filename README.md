@@ -57,3 +57,7 @@ Welcome. My name is Tannor Glumbik; I am a junior at Eastern Washington Universi
 * [Normalize](https://necolas.github.io/normalize.css/)
 * [Google Fonts](https://fonts.google.com/)
 * [Netlify] (https://docs.netlify.com/forms/setup/#success-messages)
+
+#### Code Acknowledgment 
+* Colin Manikoth
+* Alejandro | CodePen

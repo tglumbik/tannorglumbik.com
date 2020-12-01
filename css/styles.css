@@ -65,7 +65,7 @@ Red rgb(255,51,51)
   padding: .75em;
 } 
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 900px) {
   .navbar {
     flex-direction: column;
     height: auto;
@@ -1097,4 +1097,181 @@ div.classnav h4 {
 .addres h6 {
   color: #7A7B85;
   text-align: left;
+}
+
+/* DESN 366 Final */
+
+.profinal h2 {
+  text-align: center;
+  color: #363794;
+  letter-spacing: 2px;
+  margin: 14px 0;
+}
+
+.profinal p {
+  text-align: center;
+  font-size: 14pt;
+  color: #CEA67E;
+  margin-bottom: 21pt;
+}
+
+.container-all {
+  margin: 12px
+}
+.container {
+  width: calc(25% - 8px);
+  height: auto;
+  overflow: hidden;
+  margin: 4px;
+  padding: 0;
+  display: block;
+  position: relative;
+  float: left;
+}
+.container img {
+  width: 100%;
+  transition-duration: 0.3s;
+  max-width: 100%;
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+}
+.title {
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  top: 15%;
+  display: none;
+  margin-left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 14pt;
+  text-shadow: 1px 5px 10px #fff;
+  transition-duration: 0.3s;
+}
+.text {
+  position: absolute;
+  top: 60%;
+  cursor: pointer;
+  max-width: 90%;
+  text-align: left;
+  hyphens: auto;
+  left: 50%;
+  text-shadow: 1px 5px 10px #fff;
+  font-size: 12pt;
+  display: none;
+  margin-right: -50%;
+  transition-duration: 0.3s;
+  transform: translate(-50%, -50%);
+}
+.container:hover img {
+  transform: scale(1.2);
+  transition-duration: 0.3s;
+  filter: grayscale(50%);
+  opacity: 0.15;
+}
+.container:hover span {
+  color: #000;
+  display: block;
+  transition-duration: 0.3s;
+}
+
+.profinalcred {
+  margin: 14px;
+}
+
+.profinalcred h6{
+  color: #CBCCCD;
+  display: inline;
+  font-size: 10pt;
+}
+.profinalcred a {
+  background: none;
+  color: #CBCCCD;
+  font-size: 10pt;
+}
+
+.profinalcred a:link {
+  color: #CBCCCD;
+  background: none;
+  font-size: 10pt;
+}
+
+.profinalcred a:hover {
+  background: none;
+  color: #7D96E8;
+  font-size: 10pt;
+}
+
+@media only screen and (min-width: 1501px) {
+  .container {
+    width: calc(20% - 8px);
+  }
+  .title {
+    font-size: 22pt;
+  }
+
+  .text {
+    font-size: 18pt;
+  }
+  .profinalcred h6{
+    display: block;
+  }
+  .profinalcred a {
+    display: block;
+  }
+
+  .profinal h2 {
+    font-size: 60pt;
+  }
+
+}
+@media only screen and (max-width: 1500px) {
+  .container {
+    width: calc(25% - 8px);
+  }
+
+  .profinal h2 {
+    font-size: 54pt;
+  }
+}
+@media only screen and (mox-width: 900px) {
+  .title {
+    font-size: 18pt;
+  }
+
+  .text {
+    font-size: 14pt;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .container {
+    width: calc(33% - 8px);
+  }
+
+  .profinal p {
+    font-size: 12pt;
+  }
+
+  .profinal h2 {
+    font-size: 48pt;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .container {
+    width: calc(50% - 8px);
+  }
+
+  .profinal h2 {
+    font-size: 36pt;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .container {
+    width: calc(100% - 8px);
+  }
+  .profinal h2 {
+    font-size: 28pt;
+  }
 }
