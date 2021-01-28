@@ -1,0 +1,143 @@
+/* Style Guide */
+h1 {
+  font-size: 52px;
+  font-family: agenda, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+h2 {
+  font-size: 36px;
+  font-family: agenda, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h3 {
+  font-size: 26px;
+  font-family: agenda, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h4 {
+  font-size: 20px;
+  font-family: agenda, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h5 {
+  font-size: 18px;
+  font-family: agenda, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h6 {
+  font-size: 16px;
+  font-family: agenda, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p, li {
+  font-size: 18px;
+  font-family: agenda, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media screen and (max-width: 780px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  h5 {
+    font-size: 16px;
+  }
+
+  h6 {
+    font-size: 14px;
+  }
+
+  p, li {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  h1 {
+    font-size: 64px;
+  }
+
+  h2 {
+    font-size: 52px;
+  }
+
+  h3 {
+    font-size: 36px;
+  }
+
+  h4 {
+    font-size: 26px;
+  }
+
+  h5 {
+    font-size: 20px;
+  }
+
+  h6 {
+    font-size: 18px;
+  }
+
+  p, li {
+    font-size: 20px;
+  }
+}
+
+:root {
+  /* Colors */
+  --g1: hsl(237, 54, 13);
+  --g2: hsl(237, 20, 20);
+  --g3: hsl(237, 10, 30);
+  --g4: hsl(237, 6, 40);
+  --g5: hsl(237, 4, 50);
+  --g6: hsl(237, 3, 60);
+  --g7: hsl(237, 2, 70);
+  --g8: hsl(237, 1, 80);
+  --p21: hsl(226, 90, 20);
+  --p32: hsl(226, 57, 35);
+  --p53: hsl(226, 65, 62);
+  --p64: hsl(226, 70, 70);
+  --p75: hsl(226, 80, 80);
+  --p86: hsl(226, 90, 90);
+  --s21: hsl(355, 90, 20);
+  --s32: hsl(355, 73, 29);
+  --s53: hsl(355, 55, 50);
+  --s64: hsl(355, 60, 62);
+  --s75: hsl(355, 75, 75);
+  --s86: hsl(355, 95, 85);
+  --t31: hsl(30, 35, 30);
+  --t42: hsl(30, 38, 40);
+  --t63: hsl(30, 30, 50);
+  --t74: hsl(30, 45, 65);
+  --t85: hsl(30, 60, 80);
+
+  /* Typography */
+  --italic: italic;
+  --bold: 700;
+}
