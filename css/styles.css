@@ -1,6 +1,6 @@
 /* Style Guide */
 h1 {
-  font-size: 52px;
+  font-size: 64px;
   font-family: agenda, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -8,35 +8,35 @@ h1 {
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 54px;
   font-family: agenda, sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
 h3 {
-  font-size: 26px;
+  font-size: 36px;
   font-family: agenda, sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
 h4 {
-  font-size: 20px;
+  font-size: 26px;
   font-family: agenda, sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
 h5 {
-  font-size: 18px;
+  font-size: 20px;
   font-family: agenda, sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
 h6 {
-  font-size: 16px;
+  font-size: 18px;
   font-family: agenda, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -51,27 +51,27 @@ p, li {
 
 @media screen and (max-width: 780px) {
   h1 {
-    font-size: 36px;
+    font-size: 54px;
   }
 
   h2 {
-    font-size: 26px;
+    font-size: 36px;
   }
 
   h3 {
-    font-size: 20px;
+    font-size: 26px;
   }
 
   h4 {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   h5 {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   h6 {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   p, li {
@@ -81,27 +81,27 @@ p, li {
 
 @media screen and (min-width: 1920px) {
   h1 {
-    font-size: 64px;
+    font-size: 80px;
   }
 
   h2 {
-    font-size: 52px;
+    font-size: 64px;
   }
 
   h3 {
-    font-size: 36px;
+    font-size: 54px;
   }
 
   h4 {
-    font-size: 26px;
+    font-size: 36px;
   }
 
   h5 {
-    font-size: 20px;
+    font-size: 26px;
   }
 
   h6 {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   p, li {
@@ -140,4 +140,16 @@ p, li {
   /* Typography */
   --italic: italic;
   --bold: 700;
+
+  /* Margin */
+  --smM:10px;
+  --medM:14px;
+  --lrgM:20px;
+  --xlM:26px;
+
+  /* Corners */
+  --smC: 4px;
+  --medC: 6px;
+  --lrgC: 10px;
+  --xlC: 20px;
 }
