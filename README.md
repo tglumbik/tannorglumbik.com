@@ -9,8 +9,8 @@
 ## Acknowledgment
 
 * P. Colin Manikoth
-* Adobe Fonts[link](https://fonts.adobe.com/)
-* Normalize [link](https://necolas.github.io/normalize.css/)
-* CSS Tricks [link](https://css-tricks.com/)
-* w3schools [link](https://www.w3schools.com/)
+* [Adobe Fonts](https://fonts.adobe.com/)
+* [Normalize](https://necolas.github.io/normalize.css/)
+* [CSS Tricks](https://css-tricks.com/)
+* [w3schools](https://www.w3schools.com/)
 
