@@ -193,6 +193,49 @@ p, li {
   --xlC: 20px;
 }
 
+/* Logos */
+/* Primary */
+.logoEye {
+  fill: none;
+  mix-blend-mode: color-burn;
+  clip-rule: evenodd;
+}
+        
+.logo {
+  clip-path: url(#a);
+}
+        
+.logoAccentBlue {
+  fill: var(--p32);
+}
+        
+/* .c, .d {
+  fill-rule: evenodd;
+  } */
+        
+.logoBaseDark {
+  fill: var(--g1);
+}
+
+/* Reverse */
+.logoBaseReverse {
+  fill: var(--g5);
+}
+
+.logoAccentReverse {
+  fill: var(--p75);
+}
+
+/* Secondary */
+.logoAccentRed {
+  fill: var(--s53);
+}
+
+/* Tertiary */
+.logoAccentTan {
+  fill: var(--t63);
+}
+
 /* General */
 * {
   margin: 0;
@@ -254,8 +297,12 @@ header li {
   padding-right: var(--smNegM);
 }
 
-header h2 {
+header h3 {
   color: var(--p32);
+}
+
+header svg {
+height: 100px;
 }
 
 /* Home Intro */
