@@ -1,0 +1,278 @@
+/* Style Guide */
+h1 {
+    font-size: 64px;
+    font-family: agenda, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+    max-width: 1770px;
+    letter-spacing: 8px;
+    line-height: 1.4;
+  
+    transition: color .25s;
+  
+  }
+  
+  h2 {
+    font-size: 54px;
+    font-family: agenda, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  
+    max-width: 1215px;
+    letter-spacing: 6px;
+    line-height: 1.4;
+  
+    transition: color .25s;
+  
+  }
+  
+  h3 {
+    font-size: 36px;
+    font-family: agenda, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  
+    max-width: 880px;
+    letter-spacing: 4px;
+    line-height: 1.4;
+  
+    transition: color .25s;
+  
+  }
+  
+  h4 {
+    font-size: 26px;
+    font-family: agenda, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  
+    max-width: 685px;
+    letter-spacing: 2px;
+    line-height: 1.4;
+  
+    transition: color .25s;
+  
+  }
+  
+  h5 {
+    font-size: 20px;
+    font-family: agenda, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  
+    max-width: 550px;
+    letter-spacing: 2px;
+    line-height: 1.2;
+  
+    transition: color .25s;
+  
+  }
+  
+  h6 {
+    font-size: 18px;
+    font-family: agenda, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  
+    max-width: 500px;
+    line-height: 1.2;
+  
+    transition: color .25s;
+  
+  }
+  
+  p, li {
+    font-size: 18px;
+    font-family: agenda, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  
+    max-width: 500px;
+    line-height: 1.2;
+  
+    transition: color .25s;
+  
+  }
+  
+  @media screen and (max-width: 780px) {
+    h1 {
+      font-size: 54px;
+    }
+  
+    h2 {
+      font-size: 36px;
+    }
+  
+    h3 {
+      font-size: 26px;
+    }
+  
+    h4 {
+      font-size: 20px;
+    }
+  
+    h5 {
+      font-size: 18px;
+    }
+  
+    h6 {
+      font-size: 16px;
+    }
+  
+    p, li {
+      font-size: 16px;
+    }
+  }
+  
+  @media screen and (min-width: 1920px) {
+    h1 {
+      font-size: 80px;
+    }
+  
+    h2 {
+      font-size: 64px;
+    }
+  
+    h3 {
+      font-size: 54px;
+    }
+  
+    h4 {
+      font-size: 36px;
+    }
+  
+    h5 {
+      font-size: 26px;
+    }
+  
+    h6 {
+      font-size: 20px;
+    }
+  
+    p, li {
+      font-size: 20px;
+    }
+  }
+  
+  :root {
+    /* Colors */
+    --g1: hsl(237, 54%, 13%);
+    --g2: hsl(237, 20%, 20%);
+    --g3: hsl(237, 10%, 30%);
+    --g4: hsl(237, 6%, 40%);
+    --g5: hsl(237, 4%, 50%);
+    --g6: hsl(237, 3%, 60%);
+    --g7: hsl(237, 2%, 70%);
+    --g8: hsl(237, 1%, 80%);
+    --g9: hsl(237, 1%, 90%);
+    --p21: hsl(226, 90%, 20%);
+    --p32: hsl(226, 57%, 35%);
+    --p53: hsl(226, 65%, 62%);
+    --p64: hsl(226, 70%, 70%);
+    --p75: hsl(226, 80%, 80%);
+    --p86: hsl(226, 90%, 90%);
+    --s21: hsl(355, 90%, 20%);
+    --s32: hsl(355, 73%, 29%);
+    --s53: hsl(355, 55%, 50%);
+    --s64: hsl(355, 60%, 62%);
+    --s75: hsl(355, 75%, 75%);
+    --s86: hsl(355, 95%, 85%);
+    --t31: hsl(30, 35%, 30%);
+    --t42: hsl(30, 38%, 40%);
+    --t63: hsl(30, 30%, 50%);
+    --t74: hsl(30, 45%, 65%);
+    --t85: hsl(30, 60%, 80%);
+  
+    /* Typography */
+    --italic: italic;
+    --bold: 700;
+  
+    /* Margin */
+    --xsM: 6px;
+    --smM:10px;
+    --medM:14px;
+    --lrgM:20px;
+    --xlM:30px;
+    --xsNegM: -6px;
+    --smNegM: -10px;
+    --medNegM: -14px;
+    --lrgNegM: -20px;
+    --xlNegM: -30px;
+  
+    /* Corners */
+    --smC: 4px;
+    --medC: 6px;
+    --lrgC: 10px;
+    --xlC: 20px;
+  }
+  
+  /* Logos */
+  /* Primary */
+  .logoEye {
+    fill: none;
+    mix-blend-mode: color-burn;
+    clip-rule: evenodd;
+  }
+          
+  .logo {
+    clip-path: url(#a);
+  }
+          
+  .logoAccentBlue {
+    fill: var(--p32);
+  }
+          
+  /* .c, .d {
+    fill-rule: evenodd;
+    } */
+          
+  .logoBaseDark {
+    fill: var(--g1);
+  }
+  
+  /* Reverse */
+  .logoBaseReverse {
+    fill: var(--g5);
+  }
+  
+  .logoAccentReverse {
+    fill: var(--p75);
+  }
+  
+  /* Secondary */
+  .logoAccentRed {
+    fill: var(--s53);
+    transition: fill .25s;
+  }
+  
+  /* Tertiary */
+  .logoAccentTan {
+    fill: var(--t63);
+  }
+  
+  /* General */
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    background: var(--g9);
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .bold {
+    font-weight: var(--bold);
+  }
+  
+  .italic {
+    font-style: var(--italic);
+  }
