@@ -4,7 +4,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  /* background: url(https://picsum.photos/1000);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; */
 }
+
 
 .indexHeader svg {
   max-height: 100vh;
@@ -28,25 +33,109 @@
 
 /* portfolio */
 .portfolio {
-  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: var(--xlM);
 }
-
 .portfolioItem {
   display: inline-block;
   position: relative;
+  margin: var(--xsM);
+  height: 400px;
 }
 
-.portfolioItem h6 {
+@media screen and (max-width: 1920px) {
+  .portfolioItem {
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .portfolioItem {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .portfolioItem {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .portfolio {
+    display: block; 
+  }
+    
+  .portfolioItem {
+    width: 100%;
+    height: auto;
+  }
+
+  .portfolioHide {
+    display: none;
+  }
+
+}
+
+.portfolioItemText {
+  position: absolute;
+  z-index: 2;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  overflow: scroll;
+  scrollbar-width: thin;
+  padding-right: var(--medM);
+  color: var(--g9);
+  opacity: 0;
+  transition: opacity .25s;
+}
+
+.portfolioItemHeading {
+  padding-bottom: var(--smM);
+}
+
+.portfolioItemBG {
   position: absolute;
   z-index: 1;
   width: 100%;
-  color: var(--g9);
-  text-align: center;
-}
-
-.portfolioItemCover {
-  position: absolute;
-  width: 100%;
   height: 100%;
   background: var(--p32);
+  opacity: 0;
+  transition: opacity .25s;
+}
+
+.portfolioItem:hover .portfolioItemText {
+  opacity: 100%;
+  transition: opacity .5s;
+}
+
+.portfolioItem:hover .portfolioItemBG {
+  opacity: 80%;
+  transition: opacity .5s;
+}
+
+.portfolioItem img {
+  height: 100%;
+  width: auto;
+}
+
+@media screen and (max-width: 700px) {
+  .portfolioItem img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+/* Bio */
+.bio {
+min-height: 100vh;
+}
+
+/* Contact */
+.contact {
+  min-height: 100vh;
 }
