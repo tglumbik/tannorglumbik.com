@@ -1,5 +1,23 @@
+/* index header */
+.indexHeader {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.indexHeader svg {
+  max-height: 100vh;
+}
 
+.indexHeader nav {
+  display: flex;
+  position: absolute;
+  bottom: var(--xlM);
+  right: var(--xlM);
+}
 
-
+.indexHeader nav a {
+  padding-right: var(--medM);
+}
 
