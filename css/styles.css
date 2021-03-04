@@ -178,3 +178,9 @@
 .contact {
   min-height: 100vh;
 }
+
+/* IP Public Kill Switch */
+main,
+.hide {
+  display: none;
+}
