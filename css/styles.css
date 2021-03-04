@@ -132,7 +132,46 @@
 
 /* Bio */
 .bio {
-min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: var(--medM);
+
+  margin: auto auto;
+  padding: var(--xlM);
+
+  max-width: 800px;
+
+}
+
+.bio h1 {
+
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+  margin: 0;
+  width: 100%;
+}
+
+.bio h5 {
+  padding-bottom: var(--xsM);
+}
+
+.bio img {
+  width: 100%;
+}
+
+.bioColumnOne {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.bioColumnTwo {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.bioGrp {
+  padding-bottom: var(--xsM);
 }
 
 /* Contact */
