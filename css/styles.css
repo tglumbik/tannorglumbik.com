@@ -38,6 +38,7 @@
   justify-content: center;
   margin: var(--xlM);
 }
+
 .portfolioItem {
   display: inline-block;
   position: relative;
@@ -131,7 +132,7 @@
 }
 
 /* Bio */
-.bio {
+section.bio {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
@@ -175,12 +176,76 @@
 }
 
 /* Contact */
-.contact {
+section.contact  {
+  margin: auto auto;
+  padding: var(--xlM);
+  max-width: 800px;
   min-height: 100vh;
+  
 }
 
-/* IP Public Kill Switch */
-main,
+.contact h1 {
+  margin: var(--xlM) 0 var(--medM) 0;
+}
+
+.contact form{
+  width: 100%;
+}
+
+.contact h5 {
+  margin-bottom: var(--xsM);
+}
+
+.contact div{
+  margin-bottom: var(--medM);
+  margin-right: var(--medM);
+}
+
+.contact input,
+.contact label {
+  
+  width: 100%;
+  max-width: 100%;
+}
+
+.contact input,
+.contact textarea {
+ padding: var(--xsM);
+}
+
+.contact textarea {
+  width: 100.5%;
+  max-width: 100.5%;
+  min-height: 300px;
+}
+
+.contact button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--smM);
+  border-radius: var(--medC);
+  border: none;
+  background: var(--g7);
+}
+
+.contactBttn button:hover{
+  background: var(--g8);
+
+}
+
+.contactBttn button:hover .logoAccentBlue {
+  fill: var(--s53);
+}
+
+.contact svg {
+  width: auto;
+  height: 40px;
+
+}
+
+/* Public Kill Switch */
+/* main,
 .hide {
   display: none;
-}
+} */

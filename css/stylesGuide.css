@@ -82,7 +82,7 @@ h1 {
   
   }
   
-  p, li {
+  p, li, input, textarea {
     font-size: 18px;
     font-family: agenda, sans-serif;
     font-weight: 400;
@@ -120,7 +120,7 @@ h1 {
       font-size: 16px;
     }
   
-    p, li {
+    p, li, input, textarea {
       font-size: 16px;
     }
   }
@@ -150,7 +150,7 @@ h1 {
       font-size: 20px;
     }
   
-    p, li {
+    p, li, input, textarea {
       font-size: 20px;
     }
   }
