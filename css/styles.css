@@ -10,9 +10,13 @@
   background-position: center center; */
 }
 
-
-.indexHeader svg {
+.indexHeader img {
+  margin: auto;
+  width: auto;
+  height: auto;
+  max-width: 100vw;
   max-height: 100vh;
+  
 }
 
 .indexHeader nav {
@@ -201,11 +205,15 @@ section.contact  {
   margin-right: var(--medM);
 }
 
-.contact input,
 .contact label {
   
   width: 100%;
   max-width: 100%;
+}
+
+.contact input {
+  width: 96%;
+  max-width: 96%;
 }
 
 .contact input,
@@ -214,8 +222,8 @@ section.contact  {
 }
 
 .contact textarea {
-  width: 100.5%;
-  max-width: 100.5%;
+  width: 96.5%;
+  max-width: 96.5%;
   min-height: 300px;
 }
 
@@ -223,6 +231,7 @@ section.contact  {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: var(--medM);
   padding: var(--smM);
   border-radius: var(--medC);
   border: none;
@@ -245,7 +254,7 @@ section.contact  {
 }
 
 /* Public Kill Switch */
-main,
+/* main,
 .hide {
   display: none;
-}
+} */
