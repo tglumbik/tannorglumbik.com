@@ -8,6 +8,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; */
+
 }
 
 .indexHeader img {
@@ -21,6 +22,8 @@
 
 .indexHeader nav {
   display: flex;
+  justify-content: end;
+  flex-wrap: wrap;
   position: absolute;
   bottom: var(--xlM);
   right: var(--xlM);
@@ -127,10 +130,12 @@ section.portfolio {
 
 .portfolioItemHeading {
   padding-bottom: var(--smM);
+  color: var(--g9);
 }
 
 .portfolioItemText p {
   margin-bottom: var(--xsM);
+  color: var(--g9);
 }
 
 .portfolioItemText,
@@ -144,7 +149,6 @@ section.portfolio {
   overflow: scroll;
   scrollbar-width: thin;
   padding-right: var(--medM);
-  color: var(--g9);
   transition: opacity .25s;
 }
 
