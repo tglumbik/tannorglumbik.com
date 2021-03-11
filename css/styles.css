@@ -31,7 +31,7 @@
   color: var(--g1);
 }
 
-.indexHeader a:hover {
+.indexHeader a:hover h5 {
   color: var(--s53);
 }
 
@@ -289,6 +289,7 @@ section.contact  {
 }
 
 .contact h5 {
+  padding-top: var(--smM);
   margin-bottom: var(--xsM);
 }
 
@@ -316,6 +317,7 @@ section.contact  {
 .contact textarea {
   width: 96.5%;
   max-width: 96.5%;
+  min-width: 96.5%;
   min-height: 300px;
 }
 
@@ -345,4 +347,54 @@ section.contact  {
   width: auto;
   height: 40px;
 
+}
+
+/* Contact Success Page */
+.contactSuccess {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 var(--xlM);
+}
+
+.contactSuccess img {
+  width: auto;
+  height: auto;
+  max-width: 50%;
+  min-width: 100px;
+  padding: var(--lrgM);
+}
+
+.contactSuccess h4 {
+  margin-bottom: var(--medM);
+}
+
+.contactSuccess nav {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.contactSuccess a {
+  padding-right: var(--smM);
+  color: var(--g1);
+}
+
+.contactSuccess a:hover h5 {
+  color: var(--s53);
+}
+
+@media screen and (max-width: 500px) {
+  .contactSuccess {
+    flex-direction: column;
+  }
+
+  .contactSuccess h4 {
+    text-align: center;
+  }
+
+  .contactSuccess nav {
+    justify-content: center;
+  }
 }
