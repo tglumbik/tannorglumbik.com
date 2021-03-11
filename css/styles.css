@@ -181,11 +181,16 @@ section.bio {
 }
 
 .bio h5 {
+  padding-top: var(--smM);
   padding-bottom: var(--xsM);
 }
 
 .bio img {
   width: 100%;
+}
+
+.bio p {
+  padding-bottom: var(--xsM);
 }
 
 .bioColumnOne {
