@@ -35,12 +35,21 @@
   color: var(--s53);
 }
 
+/* sections */
+section {
+  margin: auto auto;
+  padding: var(--xlM);
+
+  max-width: 800px;
+}
+
 /* portfolio */
-.portfolio {
+section.portfolio {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: var(--xlM);
+
+  max-width: 100vw;
 }
 
 .portfolioItem {
@@ -108,19 +117,12 @@
   }
 }
 
-.portfolioItemText {
-  position: absolute;
-  z-index: 2;
-  top: 5%;
-  left: 5%;
-  width: 90%;
-  height: 90%;
-  overflow: scroll;
-  scrollbar-width: thin;
-  padding-right: var(--medM);
-  color: var(--g9);
-  opacity: 0;
-  transition: opacity .25s;
+@media screen and (max-width: 700px) {
+  .portfolioItem.portfolioItemCapWidth,
+  .portfolioItem.portfolioItemCapWidth img {
+    max-width: 350px;
+    height: auto;
+  }
 }
 
 .portfolioItemHeading {
@@ -131,17 +133,58 @@
   margin-bottom: var(--xsM);
 }
 
-.portfolioItemBG {
+.portfolioItemText,
+.portfolioOverlayText {
+  position: absolute;
+  z-index: 2;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  overflow: scroll;
+  scrollbar-width: thin;
+  padding-right: var(--medM);
+  color: var(--g9);
+  transition: opacity .25s;
+}
+
+.portfolioItemText {
+  opacity: 0;
+}
+
+
+.portfolioItemBG,
+.portfolioOVerlayBG {
   position: absolute;
   z-index: 1;
   width: 100%;
   height: 100%;
   background: var(--p32);
-  opacity: 0;
   transition: opacity .25s;
 }
 
-.portfolioItem:hover .portfolioItemText {
+.portfolioItemBG {
+  opacity: 0;
+}
+
+/* Class for Showing BG & Text Overlay */
+/* Meant for JS */
+.portfolioOverlayText {
+  opacity: 100%;
+  transition: opacity .5s;
+
+}
+
+.portfolioOVerlayBG {
+  opacity: 80%;
+  transition: opacity .5s;
+
+}
+
+
+/* On Hover Do BG & Text Overlay */
+/* Meant for No JS */
+/* .portfolioItem:hover .portfolioItemText {
   opacity: 100%;
   transition: opacity .5s;
 }
@@ -149,7 +192,7 @@
 .portfolioItem:hover .portfolioItemBG {
   opacity: 80%;
   transition: opacity .5s;
-}
+} */
 
 .portfolioItem img {
   height: 100%;
@@ -162,56 +205,77 @@
 section.bio {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
+  grid-auto-rows: auto;
   gap: var(--medM);
+}
 
-  margin: auto auto;
-  padding: var(--xlM);
-
-  max-width: 800px;
-
+@media screen and (max-width: 699px) {
+  section.bio {
+    display: block;
+    margin: auto auto;
+    max-width: 350px;
+  }
 }
 
 .bio h1 {
-
   grid-column: 1 / 3;
-  grid-row: 1 / 2;
-  margin: 0;
-  width: 100%;
 }
 
-.bio h5 {
-  padding-top: var(--smM);
-  padding-bottom: var(--xsM);
+.bioContentContainerOne {
+  grid-column: 1 / 2;
+}
+
+.bioContentContainerTwo {
+  grid-column: 2 / 3
+}
+
+.bioChapter {
+  padding-bottom: var(--medM);
+}
+
+.bioItem {
+  padding-bottom: var(--medM);
 }
 
 .bio img {
   width: 100%;
+  height: auto;
 }
 
+.bio h3 {
+  margin-bottom: var(--xsM);
+}
+
+.bio h5,
 .bio p {
-  padding-bottom: var(--xsM);
+  margin-bottom: var(--xsM);
 }
 
-.bioColumnOne {
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
+.bio h5 {
+  padding-top: var(--xsM);
 }
 
-.bioColumnTwo {
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
+/* Hide Switch for Two Bio About*/
+@media screen and (max-width: 699px) {
+
+  .bioAboutLargeScreen {
+    display: none;
+  }
+
+} 
+
+@media screen and (min-width: 700px) {
+  .bioAboutSmallScreen {
+    display: none;
+  }
+
 }
 
-.bioGrp {
-  padding-bottom: var(--xsM);
-}
+
+
 
 /* Contact */
 section.contact  {
-  margin: auto auto;
-  padding: var(--xlM);
-  max-width: 800px;
   min-height: 100vh;
   
 }
@@ -282,7 +346,7 @@ section.contact  {
 }
 
 /* Public Kill Switch */
-main,
+/* main,
 .hide {
   display: none;
-}
+} */
