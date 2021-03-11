@@ -13,4 +13,5 @@
 * [Normalize](https://necolas.github.io/normalize.css/)
 * [CSS Tricks](https://css-tricks.com/)
 * [w3schools](https://www.w3schools.com/)
+* [Favicon Generator](https://realfavicongenerator.net/)
 
