@@ -328,6 +328,8 @@ section.contact  {
   border-radius: var(--medC);
   border: none;
   background: var(--g7);
+
+  transition: background .25s;
 }
 
 .contactBttn button:hover{
@@ -344,9 +346,3 @@ section.contact  {
   height: 40px;
 
 }
-
-/* Public Kill Switch */
-/* main,
-.hide {
-  display: none;
-} */
