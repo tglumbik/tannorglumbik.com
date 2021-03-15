@@ -4,10 +4,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background: url(https://picsum.photos/1000);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center; */
 
 }
 
@@ -344,6 +340,7 @@ section.contact  {
   border-radius: var(--medC);
   border: none;
   background: var(--g7);
+  cursor: pointer;
 
   transition: background .25s;
 }
