@@ -47,7 +47,7 @@ section {
 }
 
 /* portfolio */
-section.portfolio {
+section#portfolio {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -60,6 +60,7 @@ section.portfolio {
   position: relative;
   margin: var(--xsM);
   height: 400px;
+  cursor: default;
 }
 
 @media screen and (min-width: 700px) {
@@ -99,6 +100,7 @@ section.portfolio {
     width: 100%;
     max-width: 350px;
     height: auto;
+    cursor: pointer;
   }
 
   div.portfolioItem img {
@@ -138,8 +140,7 @@ section.portfolio {
   color: var(--g9);
 }
 
-.portfolioItemText,
-.portfolioOverlayText {
+.portfolioItemText {
   position: absolute;
   z-index: 2;
   top: 5%;
@@ -150,57 +151,66 @@ section.portfolio {
   scrollbar-width: thin;
   padding-right: var(--medM);
   transition: opacity .25s;
-}
 
-.portfolioItemText {
   opacity: 0;
 }
 
-
-.portfolioItemBG,
-.portfolioOVerlayBG {
+.portfolioItemBG {
   position: absolute;
   z-index: 1;
   width: 100%;
   height: 100%;
   background: var(--p32);
   transition: opacity .25s;
-}
 
-.portfolioItemBG {
   opacity: 0;
 }
 
-/* Class for Showing BG & Text Overlay */
-/* Meant for JS */
-.portfolioOverlayText {
+/* On Click Overlay Feature via JS */
+.portfolioOverlay .portfolioItem .portfolioItemText{
+  position: absolute;
+  z-index: 2;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  overflow: scroll;
+  scrollbar-width: thin;
+  padding-right: var(--medM);
+  transition: opacity .25s;
+
   opacity: 100%;
-  transition: opacity .5s;
 
 }
 
-.portfolioOVerlayBG {
-  opacity: 80%;
-  transition: opacity .5s;
-
-}
-
-
-/* On Hover Do BG & Text Overlay */
-/* Meant for No JS */
-/* .portfolioItem:hover .portfolioItemText {
-  opacity: 100%;
-  transition: opacity .5s;
-}
-
-.portfolioItem:hover .portfolioItemBG {
-  opacity: 80%;
-  transition: opacity .5s;
-} */
-
-.portfolioItem img {
+.portfolioOverlay .portfolioItem div.portfolioItemBG {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
   height: 100%;
-  width: auto;
+  background: var(--p32);
+  transition: opacity .25s;
+
+  opacity: 80%;
+
+}
+
+/* On Hover Overlay Feature via CSS */
+@media screen and (min-width: 700px) {
+  .portfolioItem:hover .portfolioItemText {
+    opacity: 100%;
+    transition: opacity .5s;
+  }
+
+  .portfolioItem:hover .portfolioItemBG {
+    opacity: 80%;
+    transition: opacity .5s;  
+  }
+
+  .portfolioItem img {
+    height: 100%;
+    width: auto;
+  }
 }
 
 
