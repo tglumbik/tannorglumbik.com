@@ -203,7 +203,7 @@ section#portfolio {
 
 /* On Hover Overlay Feature via CSS */
 @media screen and (min-width: 700px) {
-  .portfolioItem:hover .portfolioItemText {
+  /*.portfolioItem:hover .portfolioItemText {
     opacity: 100%;
     transition: opacity .5s;
   }
@@ -211,7 +211,7 @@ section#portfolio {
   .portfolioItem:hover .portfolioItemBG {
     opacity: 80%;
     transition: opacity .5s;  
-  }
+  }*/
 
   .portfolioItem img {
     height: 100%;
@@ -222,7 +222,7 @@ section#portfolio {
 
 /* Bio */
 section.bio {
-  display: grid;
+  display: none;
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: auto;
   gap: var(--medM);
@@ -296,7 +296,7 @@ section.bio {
 /* Contact */
 section.contact  {
   min-height: 100vh;
-  
+  display: none;
 }
 
 .contact h1 {
