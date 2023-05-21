@@ -230,7 +230,7 @@ section.bio {
 
 @media screen and (max-width: 699px) {
   section.bio {
-    display: block;
+    display: none;
     margin: auto auto;
     max-width: 350px;
   }
